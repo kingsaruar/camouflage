@@ -45,6 +45,7 @@ function camouflage_settings() {
 		$gs['footer']=$_POST['footer'];
 		$gs['menu_ani']=$_POST['menu_ani'];
 		$gs['sidebar_ani']=$_POST['sidebar_ani'];
+		$gs['logo_url']=$_POST['logo_url'];
 		
 		update_option("camouflage_gs",$gs);
 		
@@ -160,6 +161,12 @@ function camouflage_settings() {
 						<td>
 							<p>Footer Text:-   &nbsp; (use %y to display current year, %b for blog title)</p>
 							<textarea name="footer" rows="3" cols="60"><?php echo $gs['footer']; ?></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Logo:-   &nbsp; (keep blank for no logo)</p>
+							<p><input value='<?php echo $gs['logo_url']  ?>' id='logo_url' type='textbox' name='logo_url'  /></p>
 						</td>
 					</tr>
 					
@@ -383,7 +390,7 @@ function camouflage_slide() {
   //print_r($_SERVER);
 	?>
   <div class="wrap">
-		<p>Add or delete your slide images here.</p>
+		<p>Add or delete your slide images here. (Recommended image size is 905px x 234px, different size will be auto resized.)</p>
 	<form name="form1" method="post" action="<?php echo $page_url; ?>">
 		<table>
 			<tr>
@@ -454,6 +461,7 @@ function get_default_options()
 						'page_ani'=>'on',
 						'sidebar_ani'=>'on',
 						'blog_menu'=>'on',
+						'logo_url'=>get_bloginfo('template_url').'/images/sample-logo.png',
 						));	
 						
 	if(!get_option('camouflage_slides'))

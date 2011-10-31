@@ -68,12 +68,12 @@ font-color:<?php echo $acolor;?>;
 body{
 margin:0 0 0 0;
 font-family: Arial, Helvetica, Georgia, Sans-serif;
-font-size: 12px;
+font-size: 14px;
 text-align: center;
 vertical-align: top;
 background:<?php echo $bodyback;?>;
 color:<?php echo $bodytextcolor; ?>
-
+line-height:1.5;
 }
 
 img{
@@ -81,7 +81,7 @@ border:none;
 }
 
 li{
-list-style:none;
+margin:3px 0px;
 }
 
 a{
@@ -138,7 +138,6 @@ border:solid red 0px;
 width:646px;
 height:50px;
 margin-top:18px;
-background: url(iimages/header.png) no-repeat;
 float:right;
 border:solid red 0px;
 }
@@ -470,14 +469,14 @@ border:solid red 0px;
 #conten-top{
 padding:0 0 0 0px;
 margin:0 0 0 0px;
-width:947px;
+width:100%;
 height:37px;
 background: url(images/content-top.png) no-repeat ;
 border:solid black 0px;
 }
 
 #conten-middle{
-width:947px;
+width:100%;
 background:url(images/content-middle.png) repeat-y ;
 border:solid blue 0px;
 padding:0px 0px 0px 0px;
@@ -491,7 +490,7 @@ border:solid red 0px;
 text-align:justify;
 margin:0 0 0 20px;
 padding-right:20px;
-width:700px;
+width:650px;
 float:left;
 border:solid red 0px;
 }
@@ -513,36 +512,34 @@ border:solid black 0px;
 }
 
 #conten-bottom{
-width:947px;
+width:100%;
 height:68px;
 background: url(images/content-bottom.png) no-repeat ;
 border:solid white 0px;
 }
 
 #sidebarwrap{
-width:180px;
+width:210px;
 float:right;
 margin:0 0px 0 0;
-padding:0px 0 0 15px;
+padding:0px 15px;
 border:solid red 0px;
 }
 
 #sidebar-top{
-width:180px;
+width:100%;
 height:0px;
-background: url(iimages/sidebar-top.png) no-repeat;
 }
 
 #sidebar-middle{
 margin:0 0 0 0;
 padding:1px 0 5px 0;
-width:180px;
-background: url(iimages/sidebar-middle.png) repeat-y;
+width:100%;
 border:solid red 0px;
 }
 
 #sidebar-middle ul{
-width:180px;
+width:100%;
 text-align:left;
 margin:0 auto 0 auto;
 padding:0 0 0 0px;
@@ -560,9 +557,9 @@ margin:0 0 0px 0;
 }
 
 #sidebar-middle ul li ul li{
-background: url(iimages/sidebar-item-seperator.png) no-repeat bottom;
+background: url(images/sidebar-item-seperator.png) no-repeat bottom;
 background: url(images/bullet.png) no-repeat left;
-margin:0 0 0 5px;
+margin:0px 0 8px 5px;
 padding:0 0 0 12px;
 }
 
@@ -574,7 +571,7 @@ padding:0 0 0 0;
 
 #sidebar-middle ul li h2{
 height:30px;
-background: url(iimages/sidebar-item-header.png) no-repeat left;
+background: url(images/sidebar-item-header.png) no-repeat left;
 background: url(images/bullet-big.png) no-repeat left;
 color:<?php echo $acolorhov;?>;
 margin:0px 0px 0px 0px;
@@ -593,9 +590,8 @@ color:<?php echo $alicolorhover; ?>;
 }
 
 #sidebar-bottom{
-width:180px;
+width:100%;
 height:16px;
-background: url(iimages/sidebar-bottom.png) no-repeat;
 }
 
 .widget_calendar tbody a{
@@ -693,7 +689,7 @@ float:left;
 padding: 1px 0 10px 0;
 margin: 0px 0 0px 0;
 border:solid yellow 0px;
-width:720px;
+width:100%;
 }
 
 .post h2{
@@ -744,13 +740,13 @@ border:solid black 0px;
 .previous-entries {
 	float: left;
 	padding-left: 18px;
-	background: url(iimages/mini-nav-left.gif) no-repeat left center;
+	background: url(images/mini-nav-left.gif) no-repeat left center;
 	color:<?php echo $acolor ;?>;
 }
 .next-entries {
 	float: left;
 	padding-right: 18px;
-	background: url(iimages/mini-nav-right.gif) no-repeat right center;
+	background: url(images/mini-nav-right.gif) no-repeat right center;
 	color:<?php echo $acolor ;?>;
 }
 
@@ -959,6 +955,18 @@ height:35px;
 #more_li a:hover{
 color:#3BA2FE;
 }
+
+.textwidget, .widget{
+float:left;
+}
+
+.aligncenter{
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
 .coda-slider-wrapper { padding: 0px 0px;border:solid yellow 0px;}
 .coda-slider { background: #ebebeb }
 

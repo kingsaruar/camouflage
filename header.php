@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" type="text/css" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.php" type="text/css" />
 	
-
-	
+	<?php wp_head(); ?>
+	<script type="text/javascript">var $=jQuery;</script> 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	
@@ -19,7 +19,6 @@
 	
 	
 	
-	<script src="<?php echo bloginfo('stylesheet_directory')?>/js/jquery-1.4.2.min.js" type="text/javascript"></script> 
 	<script src="<?php echo bloginfo('stylesheet_directory')?>/js/jquery.easing.min.1.3.js" type="text/javascript"></script> 
 	<script src="<?php echo bloginfo('stylesheet_directory')?>/js/jquery.coda-slider-2.0.js" type="text/javascript"></script> 
 	<script src="<?php echo bloginfo('stylesheet_directory')?>/js/camouflage.js" type="text/javascript"></script> 
@@ -294,7 +293,7 @@
 	
        $('#coda-slider-1').codaSlider({
 			autoSlide: true,
-			autoSlideInterval: 5000,
+			autoSlideInterval: 7000,
 			dynamicArrows: false,
 			dynamicTabs: false
        });
@@ -328,7 +327,7 @@
 	
 	</script>
 	
-	<?php wp_head(); ?>
+	
 </head>
 
 <body>
@@ -346,7 +345,7 @@
 <div id="main">
 
 <div id="logo">
-<div id="thelogo"><img src="<?php echo bloginfo('stylesheet_directory')?>/images/sample-slide-1.png" /></div>
+<div id="thelogo"><?php if($cf_gs['logo_url']){ ?><img src="<?php  echo $cf_gs['logo_url'] ?>" /><?php } ?></div>
 <div id="thetitle"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
 </div>
 

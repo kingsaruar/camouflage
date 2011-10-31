@@ -4,7 +4,7 @@ Skin Name: Yellow Fellow
 
 Skin URI: 
 
-Description: Yellow Fellow Description
+Description: Just a sample. Bright looking pattern.
 
 Version: 1.0
 

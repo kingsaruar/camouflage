@@ -24,16 +24,18 @@ Author URI: http://www.halalit.net/
 .four_fifth{ width:67.2%; }
 .one_sixth{ width:13.33%; }
 .five_sixth{ width:82.67%; }
-.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:2.9%; float:left;border:solid black 1px; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:2.9%; float:left; }
 .last{ margin-right:0 !important; clear:right; }
 .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
 
 .box{
 position:relative;
 float:left;
-width:90%;
+width:99%;
 margin: 15px auto 15px auto;
 text-align:justify;
+padding:3px;
+clear:both;
 }
 
 .line{

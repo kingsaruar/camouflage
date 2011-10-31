@@ -4,7 +4,7 @@ Skin Name: Red Mania
 
 Skin URI: 
 
-Description: Red Mania Description
+Description: Default Camouflage skin.
 
 Version: 1.0
 

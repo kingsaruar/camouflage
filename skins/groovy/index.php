@@ -4,7 +4,7 @@ Skin Name: Groovy
 
 Skin URI: 
 
-Description: Groovy Description
+Description: Simple blue look
 
 Version: 1.0
 

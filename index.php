@@ -5,7 +5,7 @@
 <div id="conten-middle">
 <?php
 $gb=get_option("camouflage_gb");
-$wid='700px';
+$wid='650px';
 if(!is_page() || (is_page() && get_the_title()==$gb['blog_title']) ) get_sidebar();
 if(is_page() && get_the_title()!=$gb['blog_title'])
 $wid='96%'; 

@@ -5,12 +5,12 @@
 <div id="conten-middle">
 <?php
 $gb=get_option("camouflage_gb");
-$wid='700px';
+$wid='650px';
 if(!is_page() || (is_page() && get_the_title()==$gb['blog_title']) ) get_sidebar();
 if(is_page() && get_the_title()!=$gb['blog_title'])
 $wid='96%'; 
 ?>
-<div class='cfwrapper'>
+<div class='cfwrapper' style='width:<?php echo $wid; ?>'>
 	<?php 
 	if(have_posts()): while(have_posts()):the_post();
 	?>
@@ -27,7 +27,7 @@ $wid='96%';
 				<span class="post-cat"><?php //_e('Filed under&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php  the_author(); ?></span>
 
 			</p>
-			<div class="thecontent"><?php the_content(); ?></div>
+			<div class="thecontent" style='width:<?php echo $wid; ?>'><?php the_content(); ?></div>
 		</div>
 	<br /><br />
 	
