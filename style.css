@@ -1,0 +1,66 @@
+/*  
+Theme Name: Camouflage
+
+Theme URI: 
+
+Description: Camouflage Theme
+
+Version: 1.0
+
+Author: Halal IT
+
+Author URI: http://www.halalit.net/
+*/
+
+/* ------- Fluid Columns ------- */
+.one_half{ width:48%; }
+.one_third{ width:30.66%; }
+.two_third{ width:65.33%; }
+.one_fourth{ width:22%; }
+.three_fourth{ width:74%; }
+.one_fifth{ width:16.8%; }
+.two_fifth{ width:37.6%; }
+.three_fifth{ width:58.4%; }
+.four_fifth{ width:67.2%; }
+.one_sixth{ width:13.33%; }
+.five_sixth{ width:82.67%; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:2.9%; float:left;border:solid black 1px; }
+.last{ margin-right:0 !important; clear:right; }
+.clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
+
+.box{
+position:relative;
+float:left;
+width:90%;
+margin: 15px auto 15px auto;
+text-align:justify;
+}
+
+.line{
+width:90%;
+height:1px;
+margin: 5px auto 5px auto;
+background: url(images/line.png) repeat-x;
+}
+
+.line span, .line span a{
+float:right;
+font-size:7px;
+color:gray;
+background-color:white;
+vertical-align:top;
+margin: 0 50px 0 0 0;
+}
+
+.icon{
+height:100%;
+float:left;
+width:50px;
+border:solid green 1px; /*for test*/
+margin:auto 5px auto 5px;
+}
+
+.icon img{
+width:50px;
+height:50px;
+}
